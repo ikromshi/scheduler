@@ -1,4 +1,5 @@
 import random
+import pandas
 
 def schedule_shifts():
   # Define the shifts that need to be scheduled
@@ -18,6 +19,7 @@ def schedule_shifts():
   # Create an empty schedule
   schedule = {}
 
+
   # Loop through the shifts and try to find employees to staff them
   for shift in shifts:
     available_employees = []
@@ -35,4 +37,8 @@ def schedule_shifts():
 
   # Print the schedule
   for shift, employees in schedule.items():
-    return f"Shift starting at {shift}: {', '.join(employees)}"
+    print(f"Shift starting at {shift}: {', '.join(employees)}")
+  
+  return schedule
+
+schedule_shifts()

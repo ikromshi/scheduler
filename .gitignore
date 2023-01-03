@@ -5,6 +5,7 @@
 /backend/app.db
 /backend/__pycache__
 /backend/app/__pycache__
+/backend/app/data/Fall22.csv
 
 # React
 # dependencies
